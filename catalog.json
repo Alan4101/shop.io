@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "title": "iPhone X",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "25000",
+    "img": "img/ipx.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "iPhone 7",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "10000",
+    "img": "img/ip7.jpg"
+  },
+  {
+    "id": 3,
+    "title": "iPhone 8",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "20000",
+    "img": "img/ip8.jpg"
+  },
+  {
+    "id": 4,
+    "title": "iPhone XS",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "30000",
+    "img": "img/ipsx.jpg"
+  },
+  {
+    "id": 5,
+    "title": "iPhone X",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "25000",
+    "img": "img/ipx.jpeg"
+  },
+  {
+    "id": 6,
+    "title": "iPhone 7",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "10000",
+    "img": "img/ip7.jpg"
+  },
+  {
+    "id": 7,
+    "title": "iPhone 8",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "20000",
+    "img": "img/ip8.jpg"
+  },
+  {
+    "id": 8,
+    "title": "iPhone XS",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "30000",
+    "img": "img/ipsx.jpg"
+  },
+  {
+    "id": 9,
+    "title": "iPhone X",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "25000",
+    "img": "img/ipx.jpeg"
+  },
+  {
+    "id": 10,
+    "title": "iPhone X",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "50000",
+    "img": "img/ipx.jpeg"
+  },
+  {
+    "id": 11,
+    "title": "iPhone X",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "25000",
+    "img": "img/ipx.jpeg"
+  },
+  {
+    "id": 12,
+    "title": "iPhone 7",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "10000",
+    "img": "img/ip7.jpg"
+  },
+  {
+    "id": 13,
+    "title": "iPhone 8",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "20000",
+    "img": "img/ip8.jpg"
+  },
+  {
+    "id": 14,
+    "title": "iPhone XS",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "30000",
+    "img": "img/ipsx.jpg"
+  },
+  {
+    "id": 15,
+    "title": "iPhone X",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "25000",
+    "img": "img/ipx.jpeg"
+  },
+  {
+    "id": 16,
+    "title": "iPhone 7",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "10000",
+    "img": "img/ip7.jpg"
+  },
+  {
+    "id": 17,
+    "title": "iPhone 8",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "20000",
+    "img": "img/ip8.jpg"
+  },
+  {
+    "id": 18,
+    "title": "iPhone XS",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "30000",
+    "img": "img/ipsx.jpg"
+  },
+  {
+    "id": 19,
+    "title": "iPhone X",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "25000",
+    "img": "img/ipx.jpeg"
+  },
+  {
+    "id": 20,
+    "title": "iPhone X",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": "50000",
+    "img": "img/ipx.jpeg"
+  }
+]

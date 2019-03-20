@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+input{
+    padding: .3em;
+}
+/********
+shop
+********** */
+header{
+    width: 100%;
+}
+.nav{
+    justify-content: center;
+}
+.nav li{
+    margin: 0.5em;
+}
+.catalog{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#catalog{
+    flex-wrap: wrap;
+}
+.item-goods{
+    display: none;
+}
+.item-goods figure img{
+    max-width: 100%;
+    height: 200px;
+    margin: 1em 0;
+}
+.nav-b{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pagination{
+    width: 100%;
+    text-align: center;
+    margin: 2em 0;
+}
+.paginator{
+    margin: 0 auto;
+    line-height: 150%;
+}
+.paginator > li {
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-right: 10px;
+    background: #a2a2a2;
+    font-weight: 700;
+    padding: 0.2em;
+    cursor: pointer;
+}
+.paginator_active {
+    color: #fffff9;
+    background: #474747 !important;
+}
+.sort-filter{
+    width: 100%;
+}
+.sort-filter>form{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.sort-filter>form   >div{
+    width: 50%;
+}
+/********
+registration
+**********/
+.wrapper-reg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.reg-container{
+    border:1px solid #3F729B;
+    box-shadow: 1px 1px 23px 0px #3F729B;
+    width: 500px;
+    height: 300px;
+    z-index: 100;
+    margin: 20% auto;
+    padding: 2em;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
