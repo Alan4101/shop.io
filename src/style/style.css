@@ -95,3 +95,36 @@ registration
     display: flex;
     flex-direction: column;
 }
+.wrapper{
+    text-align: center;
+    width: 100%;
+}
+#cart_box{
+    margin: 0 auto;
+    width: 100%;
+}
+.inc,.dec{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    background: #3F729B;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+button.del{
+    border: none;
+    background: transparent;
+    padding: 0.2em;
+    color: #669fff;
+    cursor: pointer;
+}
+.btn-buy{
+    width: 150px;
+    background: #b2b2b2;
+    border: none;
+    padding: 0.2em;
+}
