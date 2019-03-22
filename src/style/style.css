@@ -9,24 +9,48 @@ input{
 shop
 ********** */
 header{
+    margin: 3em 0;
     width: 100%;
 }
-.nav{
-    justify-content: center;
+.nav{ justify-content: center;}
+.nav li{ margin: 0.5em; }
+.nav{ width: 100%; }
+header ul li a{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #3F729B;
+    text-decoration: none;
 }
-.nav li{
-    margin: 0.5em;
+.nav li a:hover{
+    color: #22425b;
 }
-.catalog{
+.control-nav{
+    margin-top: -2em;
+    list-style-type: none;
+}
+.control-nav li{
+    display: inline-flex;
+    margin-left: 1em;
+    font-weight: 700;
+}
+.mg-t{
+    margin-top: 2em;
+}
+
+#catalog{
     width: 100%;
     display: flex;
     justify-content: center;
-}
-#catalog{
     flex-wrap: wrap;
 }
 .item-goods{
-    display: none;
+    /*display: none;*/
+}
+.item-goods:hover{
+    box-shadow: -1px 0px 9px 0px #3F729B;
+}
+.item-goods>h2{
+    text-align: center;
 }
 .item-goods figure img{
     max-width: 100%;
@@ -62,34 +86,44 @@ header{
     color: #fffff9;
     background: #474747 !important;
 }
-.sort-filter{
-    width: 100%;
-}
-.sort-filter>form{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+.add_item{
 
+    transition: 1s;
 }
-.sort-filter>form   >div{
-    width: 50%;
+.add_item:hover{
+    background: #22425b;
+    color: #ffffff;
 }
 /********
 registration
 **********/
+.active-form{ display: block !important;}
 .wrapper-reg{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-header{
+    margin-bottom: 2em;
 }
 .reg-container{
     border:1px solid #3F729B;
     box-shadow: 1px 1px 23px 0px #3F729B;
     width: 500px;
-    height: 300px;
-    z-index: 100;
-    margin: 20% auto;
+    max-width: 100%;
+    height: 400px;
+    max-height: 100%;
     padding: 2em;
+}
+.reg-container>form >h5{
+    text-align: center;
+}
+#registration_form, #singIn-form{
+    display: none;
 }
 .form-group{
     display: flex;
@@ -128,3 +162,63 @@ button.del{
     border: none;
     padding: 0.2em;
 }
+/*filter - sort*/
+.sort-filter{
+    width: 100%;
+}
+.sort-filter>form{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.sort-filter>form   >div{
+    width: 50%;
+}
+
+.sort-block,.filter{
+    text-align: center;
+}
+.sort-select>select{
+    width: 200px;
+    border-radius: 5px;
+    padding: 0.2em;
+}.sort-select>select>option{
+    font-size: 16px;
+ }
+.form-control-range{
+    text-align: center;
+    width: 200px;
+    max-width: 100%;
+    margin: 0px auto;
+}
+#max-p{
+    position: absolute;
+    top: 0;
+    right: 80px;
+}
+#min_price{
+    position: absolute;
+    top:0;
+    left: 75px;
+}
+.f-filter{
+    position: relative;
+}
+/*msg*/
+.msg-body{
+    position: absolute;
+    bottom:2em;
+    right: 2em;
+    width: 300px;
+    height: 100px;
+    background: #4285F4;
+    /*background: rgba(34, 66, 91,0.8);*/
+    color: #fff;
+    padding: 0.5em;
+    font-family: 'Lato', sans-serif;
+    border-radius: 10px;
+    opacity: 1;
+    transition: opacity 2s;
+}
+.msg-body p{font-size: 14px}

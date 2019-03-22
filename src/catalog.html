@@ -6,38 +6,54 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
-    <title>Cart</title>
+
+    <title>Shop</title>
 </head>
-<body id="cart_p">
+<body id="catalog_p">
 <header>
     <ul class="nav nav-pills">
         <li><a href="catalog.html">Catalog</a></li>
         <li class="active"><a id="cart" rel="nofollow" href="cart.html">Cart <i class="fas fa-cart-plus"></i><span id="total-cart-count" class="badge"></span></a></li>
-        <li><a href="#" id="clear_cart">Clear cart</a></li>
     </ul>
     <ul class="control-nav">
         <li class="user-block" id="user"></li>
         <li><a href="index.html" class="exit" id="exit">Exit</a></li>
     </ul>
 </header>
-
-<div class="container">
+<div class="container mg-t">
     <div class="row">
-        <div class="wrapper">
-            <form  name="cartForm">
-                <div id="cart_box">
-
+        <div class="sort-filter">
+            <form name="filters-form" action="">
+                <div class="sort-block">
+                    <h4>Sort</h4>
+                    <div class="sort-select">
+                        <select name="select-sort"> <!--Supplement an id here instead of using 'name'-->
+                            <option value="A-Z">A-Z</option>
+                            <option value="Z-A">Z-A</option>
+                            <option value="min">Min price</option>
+                            <option value="max">Max price</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <p id="total_sum">Total sum: </p>
-                    <button type="submit" name="send" class="btn-buy">Buy</button>
+                <div class="filter">
+                    <h4>Filter</h4>
+                    <div class="">
+                        <div class="form-group f-filter">
+                            <label id="min_price"></label>
+                            <input type="range" class="form-control-range" id="rangePrice" min="5000" max="50000" step="5000">
+                            <label id="max-p">50 000</label>
+                        </div>
+                    </div>
                 </div>
             </form>
+        </div>
+        <div id="catalog" class="catalog__goods"></div>
+        <div class="pagination">
+            <ul id="pag" class="paginator"></ul>
         </div>
     </div>
 </div>
 <script src="../dist/app.js"></script>
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

@@ -1,55 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Autorization</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
-
-    <title>Shop</title>
 </head>
-<body id="catalog_p">
-<header>
-    <ul class="nav nav-pills">
-        <li><a href="index.html">Catalog</a></li>
-        <li class="active"><a  id="cart" rel="nofollow" href="cart.html">Cart<span id="total-cart-count" class="badge"></span></a></li>
-        <li class="" id="user"></li>
-    </ul>
-</header>
-<div class="container">
-    <div class="row">
-        <div class="sort-filter">
-            <form name="filters-form" action="">
-                <div class="sort-block">
-                    <h3>Sort</h3>
-                    <div class="">
-                        <select name="select-sort"> <!--Supplement an id here instead of using 'name'-->
-                            <option value="A-Z">A-Z</option>
-                            <option value="Z-A">Z-A</option>
-                            <option value="min">Min price</option>
-                            <option value="max">Max price</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="filter">
-                    <h3>Filter</h3>
-                    <div class="">
-                        <div class="form-group">
-                            <label for="rangePrice">price</label>
-                            <label id="min_price" ></label>
-                            <input type="range" class="form-control-range" id="rangePrice" min="5000" max="50000" step="5000">
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div id="catalog" class="catalog"></div>
-        <div class="pagination">
-            <ul id="pag" class="paginator"></ul>
-        </div>
+<body id="reg">
+
+<div class="wrapper-reg">
+    <h2 class="text-header">Hello, please <a id="sIn" href="#">Sign In</a> or <a id="sUp" href="#">Sign Up</a> in order to make a purchase!</h2>
+    <div class="reg-container" id="singIn-form">
+        <form name="Auto" action="">
+            <h5>SING IN</h5>
+            <hr>
+            <div class="form-group">
+                <label for="username">Your name</label>
+                <input id="username" name="username" type="text" placeholder="Name" autocomplete="name" minlength="3" maxlength="10" pattern="^[а-яА-ЯіёІЁa-zA-Z0-9]+$">
+            </div>
+            <div class="form-group">
+                <label for="password">Your password</label>
+                <input id="password" name="password" type="password" placeholder="Password" maxlength="6"
+                       minlength="3" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+            </div>
+            <button class="btn btn-default" id="singin" name="singin" type="submit">Sing in</button>
+            <button class="btn btn-default" name="clear" type="reset">Clear</button>
+        </form>
+    </div>
+    <div class="reg-container" id="registration_form">
+        <form name="regForm" action="">
+            <h5>SIGN UP</h5>
+            <hr>
+            <div class="form-group">
+                <label for="uname">Your name</label>
+                <input id="uname" name="uname" type="text" placeholder="Name" minlength="3" maxlength="10" pattern="^[а-яА-ЯіёІЁa-zA-Z0-9]+$">
+            </div>
+            <div class="form-group">
+                <label for="pass">Your password</label>
+                <input id="pass" name="pass" type="password" placeholder="Password" maxlength="6"
+                       minlength="3" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+            </div>
+            <div class="form-group">
+                <label for="pass_confirm">Confirm password</label>
+                <input id="pass_confirm" name="pass_confirm" type="password" placeholder="Password" maxlength="6"
+                       minlength="3" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+            </div>
+            <button class="btn btn-default" id="signup" name="signup" type="submit">Sign up</button>
+            <button class="btn btn-default" name="clear" type="reset">Clear</button>
+        </form>
     </div>
 </div>
+
+
 <script src="../dist/app.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
