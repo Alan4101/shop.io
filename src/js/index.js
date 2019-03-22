@@ -2,6 +2,7 @@
 import {Get} from "./Restful";
 // const  data = "/Shop/catalog.json";
 const  data = "http://demo0267974.mockable.io/shop";
+const pageId = document.getElementById('catalog_p');
 
 Get(data).then( response =>{
     View(JSON.parse(response));
@@ -10,15 +11,37 @@ Get(data).then( response =>{
     console.log('Error!');
     console.log(error);
 });
-window.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('pag').addEventListener('click', pagination, false);
-});
+
+function View(file) {
+    for(let i in file) {
+            addDataInCatalog(file[i]);
+        }
+}
+
+function addDataInCatalog(data) {
+    let block = document.getElementById('catalog');
+    let divb = document.createElement('div');
+    divb.className = "col-lg-4 col-md-4 col-sm-12 item-goods";
+    divb.innerHTML = `<h2>${data.title}</h2><figure><img src="${data.img}" alt=""><figcaption><p>${data.description}</p>`+
+        `<div class="nav-b"><p>${data.price} <span>UAH</span></p><button type="button" class="btn add_item" data-id="${data.id}" data-title="${data.title}" data-img="${data.img}" data-price="${data.price}">Add to cart</button></div></figcaption></figure>`;
+    block.appendChild(divb);
+}
+
+if(!pageId){
+    console.log('Not catalog page!')
+}else {
+
+    window.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('pag').addEventListener('click', pagination, false);
+    });
+}
+
 function fip(data) {
     let count_item = Object.keys(data).length,
         countInPage = 6;
     let page = Math.ceil(count_item/countInPage);
-    AddCountPage(page);
-
+    // AddCountPage(page);
+//
 }
 let opt = {
     iCount: 24,
@@ -43,27 +66,10 @@ function AddCountPage(countPage){
     }
     pag.innerHTML = page;
 }
-function DataAttr() {
-    opt.item.forEach((el,i)=>{
-        el.setAttribute('data-num',i);
-    })
-}
-AddCountPage();
+
 // FirstItem();
-DataAttr();
-function View(file) {
-    for(let i in file){
-        addDataInCatalog(file[i]);
-    }
-}
-function addDataInCatalog(data) {
-    let block = document.getElementById('catalog');
-    let divb = document.createElement('div');
-    divb.className = "col-lg-4 col-md-4 col-sm-12 item-goods";
-    divb.innerHTML = `<h2>${data.title}</h2><figure><img src="${data.img}" alt=""><figcaption><p>${data.description}</p>`+
-        `<div class="nav-b"><p>${data.price} <span>UAH</span></p><button type="button" class="btn add_item" data-id="${data.id}" data-title="${data.title}" data-img="${data.img}" data-price="${data.price}">Add to cart</button></div></figcaption></figure>`;
-    block.appendChild(divb);
-}
+
+
 function pagination(event) {
 
     let e = event,
