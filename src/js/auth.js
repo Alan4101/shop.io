@@ -11,51 +11,54 @@ function randomInteger(min, max) {
     return rand;
 }
 window.addEventListener('load', function () {
-// Sign in
-    d.getElementById('singin').addEventListener('click', e =>{
-        e.preventDefault();
+    if(document.getElementById('reg')){
+        // Sign in
+        d.getElementById('singin').addEventListener('click', e =>{
+            e.preventDefault();
 
-        let form =  document.forms.Auto;
-        let body = {
-            username: form.elements.username.value,
-            password: form.elements.password.value
-        };
-        Get(data_get).then( response =>{
-            console.log(response);
-            return ValidateIn(body, JSON.parse(response));
-        }).catch( error =>{
-            console.log('Error!');
-            console.log(error);
+            let form =  document.forms.Auto;
+            let body = {
+                username: form.elements.username.value,
+                password: form.elements.password.value
+            };
+            Get(data_get).then( response =>{
+                console.log(response);
+                return ValidateIn(body, JSON.parse(response));
+            }).catch( error =>{
+                console.log('Error!');
+                console.log(error);
+            });
         });
-    });
 
-    document.getElementById('signup').addEventListener('click', (e)=>{
-        e.preventDefault();
+        document.getElementById('signup').addEventListener('click', (e)=>{
+            e.preventDefault();
 
-        let form = d.forms.regForm;
-        let body = {
-            id: randomInteger(2,100),
-            username: form.elements.uname.value,
-            password:  form.elements.pass.value,
-            passwordC: form.elements.pass_confirm.value
-        };
-        ValidateUP(body);
-        let params = "id="+body.id+ "&username=" + body.username+ "&pass=" + body.password;
-        Post(data_post, params).then(text=>{
-            console.log(text);
-        }, error => console.log(error));
-    });
-    d.getElementById('sUp').addEventListener('click', (e)=>{
-        e.preventDefault();
-        d.getElementById('singIn-form').classList.remove('active-form');
-        d.getElementById('registration_form').classList.add('active-form');
-    });
+            let form = d.forms.regForm;
+            let body = {
+                id: randomInteger(2,100),
+                username: form.elements.uname.value,
+                password:  form.elements.pass.value,
+                passwordC: form.elements.pass_confirm.value
+            };
+            ValidateUP(body);
+            let params = "id="+body.id+ "&username=" + body.username+ "&pass=" + body.password;
+            Post(data_post, params).then(text=>{
+                console.log(text);
+            }, error => console.log(error));
+        });
+        d.getElementById('sUp').addEventListener('click', (e)=>{
+            e.preventDefault();
+            d.getElementById('singIn-form').classList.remove('active-form');
+            d.getElementById('registration_form').classList.add('active-form');
+        });
 
-    d.getElementById('sIn').addEventListener('click', (e)=>{
-        e.preventDefault();
-        d.getElementById('registration_form').classList.remove('active-form');
-        d.getElementById('singIn-form').classList.add('active-form');
-    });
+        d.getElementById('sIn').addEventListener('click', (e)=>{
+            e.preventDefault();
+            d.getElementById('registration_form').classList.remove('active-form');
+            d.getElementById('singIn-form').classList.add('active-form');
+        });
+    }
+
 });
 //validate sign UP
 function ValidateUP(obj){
@@ -66,7 +69,7 @@ function ValidateUP(obj){
         Message('Problem','Passwords do not match!')
     } else {
         Message('Success', 'You have successfully sign up');
-        localStorage.setItem('newUser', JSON.stringify(obj));
+        localStorage.setItem('user', JSON.stringify(obj));
         window.location.replace('/Shop/src/catalog.html');
 
     }

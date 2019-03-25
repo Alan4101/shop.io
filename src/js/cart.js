@@ -15,16 +15,19 @@ d.querySelector('.catalog__goods').addEventListener('click', e =>{
             id = e.target.dataset.id,
             title = e.target.dataset.title,
             price = e.target.dataset.price;
+
         if(cartData.hasOwnProperty(id)){
+            // cartData.count+=1;
             cartData[id][2]+=1;
-            console.log(cartData[id][2]);
         }else {
             cartData[id] = [title, price, 1];
         }
         if(!setCartData(cartData)){
             this.disabled = false;
         }
-        localStorage.setItem('counter', JSON.stringify(countInCart++));
+        countInCart++;
+        localStorage.setItem('counter', JSON.stringify(countInCart));
+        document.querySelector('#total-cart-count').innerHTML = countInCart;
 
     }
 });

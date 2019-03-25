@@ -1,5 +1,4 @@
 'use strict';
-
 window.addEventListener('DOMContentLoaded', function () {
     checkCart();
     Cart();
@@ -108,6 +107,7 @@ function Cart() {
     cart_box.insertAdjacentHTML('afterBegin', totalItems);
     sum.innerHTML = " " +totalPrice + " UAH";
 }
+
 
 //
 document.getElementById('clear_cart').addEventListener('click',(e)=>{

@@ -162,9 +162,18 @@ button.del{
     border: none;
     padding: 0.2em;
 }
+.nav-b>p{
+    color: #4285F4;
+    padding-top: 7px;
+    margin-bottom: 0 !important;
+}
+.full-more:hover{
+    color: #4285F4;
+}
 /*filter - sort*/
 .sort-filter{
     width: 100%;
+    margin-bottom: 3em;
 }
 .sort-filter>form{
     display: flex;
@@ -205,6 +214,17 @@ button.del{
 .f-filter{
     position: relative;
 }
+.block__full{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.block_info{
+    text-align: center;
+}
+
 /*msg*/
 .msg-body{
     position: absolute;

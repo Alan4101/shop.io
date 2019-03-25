@@ -12,7 +12,7 @@
 <header>
     <ul class="nav nav-pills">
         <li><a href="catalog.html">Catalog</a></li>
-        <li class="active"><a id="cart" rel="nofollow" href="cart.html">Cart <i class="fas fa-cart-plus"></i><span id="" class="badge"></span></a></li>
+        <li class="active"><a id="cart" rel="nofollow" href="cart.html">Cart <i class="fas fa-cart-plus"></i><span id="total-cart-count" class="badge"></span></a></li>
         <li><a href="#" id="clear_cart">Clear cart</a></li>
     </ul>
     <ul class="control-nav">
@@ -34,12 +34,11 @@
                     </tr>
                     </thead>
                     <tbody class="cart_box">
-
                     </tbody>
                 </table>
                 <div class="form-group">
                     <p id="total_sum">Total sum: </p>
-                    <button type="submit" name="send" class="btn-buy">Buy</button>
+                    <button type="submit" id="send" name="send" class="btn-buy">Buy</button>
                 </div>
             </form>
         </div>

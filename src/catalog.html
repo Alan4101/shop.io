@@ -27,22 +27,21 @@
                 <div class="sort-block">
                     <h4>Sort</h4>
                     <div class="sort-select">
-                        <select name="select-sort"> <!--Supplement an id here instead of using 'name'-->
-                            <option value="A-Z">A-Z</option>
-                            <option value="Z-A">Z-A</option>
-                            <option value="min">Min price</option>
-                            <option value="max">Max price</option>
+                        <select id="sort_select" name="select-sort"> <!--Supplement an id here instead of using 'name'-->
+                            <option value="max">Max to min</option>
+                            <option value="min">Min to max</option>
                         </select>
                     </div>
                 </div>
                 <div class="filter">
                     <h4>Filter</h4>
-                    <div class="">
-                        <div class="form-group f-filter">
-                            <label id="min_price"></label>
-                            <input type="range" class="form-control-range" id="rangePrice" min="5000" max="50000" step="5000">
-                            <label id="max-p">50 000</label>
-                        </div>
+                    <div class="sort-select">
+                        <select id="filter" name="select-sort"> <!--Supplement an id here instead of using 'name'-->
+                            <option value="all">All</option>
+                            <option value="iPhone">Iphone</option>
+                            <option value="Samsung">Samsung</option>
+                            <option value="Xiaomi">Xiaomi</option>
+                        </select>
                     </div>
                 </div>
             </form>
@@ -50,6 +49,12 @@
         <div id="catalog" class="catalog__goods"></div>
         <div class="pagination">
             <ul id="pag" class="paginator"></ul>
+        </div>
+        <div class="last-view">
+            <h2 class="text-center">Recently viewed</h2>
+            <div class="row last catalog__goods">
+
+            </div>
         </div>
     </div>
 </div>
